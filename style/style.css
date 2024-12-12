@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "Pokemon";
+  src: url("../fonts/Pokemon_Solid.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Pacifico";
+  src: url("../fonts/Pacifico-Regular.ttf");
+}
+
+header h1 {
+  font-family: "Pokemon", cursive;
+  color: green;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  background-color: green;
+  font-family: "Pokemon", cursive; /*Utilise la police Pokemon*/
+  color: white; /*couleur de texte*/
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: white;
+  color: green;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+header nav {
+  background-color: green;
+}
+
+nav ul {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul {
+  flex-direction: row;
+  align-items: justify-content;
+}
+
+nav ul li {
+  margin: 0 7%;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: right;
+  text-align: right;
+  padding: 10px;
+}
+footer a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: blue;
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  header {
+    display: flex;
+    align-items: flex-start;
+  }
+  .logo {
+    display: center;
+    margin: 0 auto;
+  }
+
+  main {
+    display: block;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  header {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  img {
+    max-width: 200%;
+  }
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
